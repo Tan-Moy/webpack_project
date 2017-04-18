@@ -27,10 +27,10 @@ module.exports = {
     devServer: {
         contentBase: __dirname + '/dist', //location from which everything is served
         compress: true, // Set this if you want to enable gzip compression for assets
-        hot: true, // Enable special support for Hot Module Replacement
+        //hot: true, // Enable special support for Hot Module Replacement
         //port:8080, //set port
-        stats:"errors-only"// shows errors only in terminal
-
+        stats: "errors-only", // shows errors only in terminal
+        open: true //opens a new window for intial build
     },
 
     plugins: [

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
+    "devm":"webpack -d --watch",
     "prod": "webpack -p"
   },
   "author": "Tan",
