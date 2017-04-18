@@ -1,4 +1,4 @@
-const css = require('./app.scss'); //this tells webpack to include css in bundle.js. We will need style-loader to actually apply the css
+const css = require('./app.scss');
 
 import React from 'react';
 import ReactDOM from 'react-dom';

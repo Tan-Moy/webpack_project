@@ -14,13 +14,17 @@ module.exports = {
     module: {
         rules: [{
             //checks for any .scss files and use css-loader to include it in bundle.js and style-loader to make the css work. Webpack looks at these files from bottom up. ExtractTextPlugin to eject them all into a separate file
-            test: /\.scss/,
+            test: /\.scss$/,
             //use: ["style-loader","css-loader","sass-loader"]
             // ^ old use, modified below to be used with ExtractTextPlugin
             use: ExtractTextPlugin.extract({
                 fallback: "style-loader",
                 use: ["css-loader", "sass-loader"]
             })
+        },{
+            test: /\.js$/,
+            exclude:/node_modules/,
+            use: 'babel-loader'
         }]
     },
 
