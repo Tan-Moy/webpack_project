@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "devm": "webpack -d --watch",
+    "start": "webpack-dev-server",
+    "dev": "webpack -d --watch",
     "prod": "webpack -p"
   },
   "author": "Tan",
